@@ -1,12 +1,12 @@
 = Functional Mock-up Interface
 
-Functional Mock-up Interface (FMI) is a tool independent standard that defines an interface to be used in computer simulations to develop complex cyber-physical systems.
+The Functional Mock-up Interface (FMI) is a tool independent standard that defines an interface to be used in computer simulations to develop complex cyber-physical systems.
 
 == Building the Specification
 
 The FMI specification is written in http://asciidoc.org/[AsciiDoc], a plain-text mark-up format that can be converted to HTML, DocBook, PDF and other formats. To build the documentation locally
 
-. Download and install https://www.ruby-lang.org/en/downloads/[Ruby]
+. https://www.ruby-lang.org/en/downloads/[Install Ruby]
 
 . Install the https://asciidoctor.org/#installation[AsciiDoctor Ruby gem]
 
@@ -14,7 +14,12 @@ The FMI specification is written in http://asciidoc.org/[AsciiDoc], a plain-text
 
   git clone https://github.com/t-sommer/fmi-standard.git
 
-. Generate the HTML document
+. Change into the `docs` folder
 
   cd docs
+
+. Generate the HTML document
+
   asciidoctor -b html5 fmi_specification.adoc
+
+The generated `fmi_specification.html` can be viewed with any modern web browser.
