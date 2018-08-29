@@ -150,3 +150,24 @@ Follow this process if you'd like your work considered for inclusion in the proj
 . https://help.github.com/articles/about-pull-requests/[Open a Pull Request] with a clear title and description.
 
 *IMPORTANT*: By submitting a patch, you agree to allow the project owner to license your work under the same license as that used by the project.
+
+== Formatting Rules
+
+When writing or editing the specification documents please follow the https://asciidoctor.org/docs/asciidoc-recommended-practices/[AsciiDoc Recommended Practices], particularly:
+
+- Use https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line[one sentence per line]
+
+- Use Atx style https://asciidoctor.org/docs/asciidoc-recommended-practices/#section-titles[section titles]
+
+- Use four dashes (`----`) for https://asciidoctor.org/docs/asciidoc-recommended-practices/#delimited-blocks[delimited blocks]
+
+- Use the asterisk (`*`) as marker for nested https://asciidoctor.org/docs/asciidoc-recommended-practices/#lists[lists]
+
+=== Source Code
+
+Only the following strings are formatted as literals (using surrounding back ticks):
+
+- source, markup and pseudo code (and parts thereof)
+- file names and paths
+
+Quotes must only be included if they are part of the original source or markup code.
