@@ -151,7 +151,23 @@ Follow this process if you'd like your work considered for inclusion in the proj
 
 *IMPORTANT*: By submitting a patch, you agree to allow the project owner to license your work under the same license as that used by the project.
 
-== Formatting Rules
+== Branching and versioning
+
+We use the https://nvie.com/posts/a-successful-git-branching-model/[GitFlow] branching model and https://semver.org/[Semantic Versioning] for releases.
+
+- New development is done in _feature branches_
+
+- Feature branches are branched off of the `develop` branch
+
+- Finished features and fixes are merged back into the `develop` branch
+
+- When it is time to make a release, a release branch is created off of `develop`
+
+- When the release is finished, the _release branch_ is merged into `master` and into `develop`
+
+- Commits in the `master` branch are _tagged_ with a version number (e.g. `v2.0.1`)
+
+== Formatting rules
 
 When writing or editing the specification documents please follow the https://asciidoctor.org/docs/asciidoc-recommended-practices/[AsciiDoc Recommended Practices], particularly:
 
@@ -163,7 +179,7 @@ When writing or editing the specification documents please follow the https://as
 
 - Use the asterisk (`*`) as marker for nested https://asciidoctor.org/docs/asciidoc-recommended-practices/#lists[lists]
 
-=== Source Code
+=== Source code
 
 Only the following strings are formatted as literals (using surrounding back ticks):
 
