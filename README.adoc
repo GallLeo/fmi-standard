@@ -1,10 +1,17 @@
-image::docs/images/FMI_logo_horizontal.svg[width=40%,align="center"]
+image::docs/images/FMI_logo_horizontal.svg[width=30%,align="center"]
 
 = Functional Mock-up Interface
 
-The Functional Mock-up Interface (FMI) is a tool independent standard that defines an interface to be used in computer simulations to develop complex cyber-physical systems.
+The Functional Mock-up Interface (FMI) is a free standard that defines an interface to exchange dynamic models using a combination of xml files, binaries and C code.
+It's supported by https://fmi-standard.org/tools/[100+] tools and maintained as a https://modelica.org/projects[Modelica Association Project].
 
-== Building the Specification
+== Repository Structure
+
+- `docs` -- sources of the specification document
+- `headers` -- C header files
+- `schema` -- the XSD schema for the modelDescription.xml
+
+== Building the Specification Document
 
 The FMI specification is written in http://asciidoc.org/[AsciiDoc], a plain-text mark-up format that can be converted to HTML, DocBook, PDF and other formats. To build the documentation locally
 
